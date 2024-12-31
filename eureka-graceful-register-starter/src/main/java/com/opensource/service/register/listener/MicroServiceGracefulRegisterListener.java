@@ -56,7 +56,7 @@ public class MicroServiceGracefulRegisterListener implements ApplicationListener
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
         if (event instanceof ApplicationReadyEvent) {
-            onApplicationEvent(event);
+            onApplicationEvent((ApplicationReadyEvent) event);
         }
     }
 
